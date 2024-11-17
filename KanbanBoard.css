@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto; /* Horizontal scrolling for overflow */
+}
+
+.column {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Adjust column width */
+  max-width: 300px; /* Optional: Prevent excessive width */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.column h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.ticket {
+  background-color: #f9fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket strong {
+  font-size: 1rem;
+  color: #111827;
+}
+
+.ticket p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0.5rem 0 0;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #111827;
+}
+
+.header select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+/* Scrollbar Styling */
+.container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f7f8fa;
+}
+
+
+
+.display-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.display-dropdown {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 8px;
+  z-index: 10;
+}
+
+.dropdown-section {
+  margin-bottom: 10px;
+}
+
+.dropdown-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.dropdown-item {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.dropdown-item select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
